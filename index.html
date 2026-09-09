@@ -51,7 +51,7 @@
             <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">OSCAR LIM JIAN XI</h1>
             <p class="text-xl md:text-2xl text-blue-200 mb-6 font-light">IT Diploma Student & Aspiring Full-Stack Developer</p>
             <p class="text-md md:text-lg text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-                IT diploma student with a 3.20 GPA (Final Semester) at TAR UMT. Hands-on experience building responsive frontends, backend logic, and database-driven systems. Familiar with AI-assisted workflow automation and passionate about writing clean, functional code. Currently seeking a full-time internship.
+                IT diploma student with a 3.29 GPA (Final Semester) at TAR UMT. Hands-on experience building responsive frontends, backend logic, and database-driven systems. Familiar with AI-assisted workflow automation and passionate about writing clean, functional code. Currently seeking a full-time internship.
             </p>
             <div class="flex justify-center space-x-4">
                 <a href="#contact" class="bg-teal-500 hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition duration-300">Hire Me for Internship</a>
@@ -156,9 +156,14 @@
                         <div class="mb-6 relative">
                             <span class="text-sm font-semibold text-gray-500">June 2025 - Nov 2026</span>
                             <h3 class="text-lg font-bold text-gray-900">Autopilot Asia Hackathon 2026</h3>
-                            <p class="text-sm text-gray-600 mt-2">
+                            <p class="text-sm text-gray-600 mt-2 mb-3">
                                 Engineered a production-ready AI workforce agent for enterprise scenarios, leveraging LLM APIs, dynamic memory retention, and context-engineered prompts. Implemented semantic guardrails and mock corporate API integrations.
                             </p>
+                            <!-- View My Cert Button -->
+                            <button onclick="openModal()" class="inline-flex items-center gap-2 bg-teal-50 text-teal-700 hover:bg-teal-100 border border-teal-300 text-xs font-semibold px-3 py-1.5 rounded-md transition duration-200">
+                                <i class="fa-solid fa-certificate text-teal-600"></i>
+                                View My Cert
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -171,7 +176,7 @@
                             <span class="text-sm font-semibold text-gray-500">Current (Final Semester)</span>
                             <h3 class="text-lg font-bold text-gray-900">Diploma in Information Technology</h3>
                             <p class="text-sm text-teal-600 font-medium">TAR UMT (Tunku Abdul Rahman University of Management and Technology)</p>
-                            <p class="text-sm font-bold text-gray-700 mt-2">Current CGPA: 3.20</p>
+                            <p class="text-sm font-bold text-gray-700 mt-2">Current CGPA: 3.29</p>
                         </div>
                     </div>
                 </div>
@@ -179,17 +184,37 @@
         </div>
     </section>
 
+    <!-- Certificate Modal (弹窗放大查看证书) -->
+    <div id="certModal" class="fixed inset-0 bg-black/75 hidden items-center justify-center z-50 p-4 transition-opacity">
+        <div class="relative bg-white rounded-xl max-w-3xl w-full p-4 overflow-hidden shadow-2xl">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center pb-3 border-b border-gray-200 mb-3">
+                <h3 class="font-bold text-gray-800 text-lg"><i class="fa-solid fa-award text-amber-500 mr-2"></i>Supervity AutoPilot Asia Hackathon Certificate</h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 text-2xl font-bold focus:outline-none">&times;</button>
+            </div>
+            <!-- Certificate Image -->
+            <div class="overflow-hidden rounded-lg border border-gray-100">
+                <img src="cert.jpeg" alt="Supervity AutoPilot Asia Hackathon Certificate - Lim Jian Xi Oscar" class="w-full h-auto object-contain max-h-[75vh]">
+            </div>
+            <!-- Modal Footer -->
+            <div class="mt-4 flex justify-end gap-3">
+                <a href="cert.jpeg" target="_blank" class="text-xs bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-4 py-2 rounded-lg transition">Open Full Image</a>
+                <button onclick="closeModal()" class="text-xs bg-teal-600 hover:bg-teal-700 text-white font-semibold px-4 py-2 rounded-lg transition">Close</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-950 text-white">
         <div class="max-w-3xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-4">Let's Connect for Internships!</h2>
             <p class="text-gray-400 mb-8">I am actively looking for full-time internship opportunities where I can contribute and learn.</p>
             
-            <div class="grid md:grid-cols-3 gap-6 text-center max-w-xl mx-auto mb-8">
+            <div class="grid md:grid-cols-3 gap-6 text-center max-w-2xl mx-auto mb-8">
                 <a href="mailto:oscarlim0185@gmail.com" class="p-4 bg-gray-900 rounded-lg hover:bg-gray-800 transition">
                     <i class="fa-solid fa-envelope text-2xl text-teal-400 mb-2"></i>
                     <p class="text-xs text-gray-400">Email Me</p>
-                    <p class="text-sm font-semibold mt-1 truncate">oscarlim0185@gmail.com</p>
+                    <p class="text-xs sm:text-sm font-semibold mt-1 break-all">oscarlim0185@gmail.com</p>
                 </a>
                 <a href="tel:+60189054788" class="p-4 bg-gray-900 rounded-lg hover:bg-gray-800 transition">
                     <i class="fa-solid fa-phone text-2xl text-blue-400 mb-2"></i>
@@ -199,7 +224,7 @@
                 <div class="p-4 bg-gray-900 rounded-lg">
                     <i class="fa-solid fa-location-dot text-2xl text-purple-400 mb-2"></i>
                     <p class="text-xs text-gray-400">Location</p>
-                    <p class="text-sm font-semibold mt-1 truncate">Kuala Lumpur, MY</p>
+                    <p class="text-sm font-semibold mt-1">Kuala Lumpur, MY</p>
                 </div>
             </div>
             
@@ -207,5 +232,26 @@
         </div>
     </section>
 
+    <!-- Modal Script -->
+    <script>
+        function openModal() {
+            const modal = document.getElementById('certModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('certModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+        }
+
+        // 点击背景也可以关闭弹窗
+        document.getElementById('certModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 </html>
